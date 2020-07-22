@@ -3,7 +3,7 @@ from shop import views
 
 app_name = 'shop'
 
-register_converter(FourDigitYearConverter,'yyyy')
+# register_converter(FourDigitYearConverter, 'yyyy')
 
 urlpatterns = [
     path('', views.item_list, name='item_list'),
