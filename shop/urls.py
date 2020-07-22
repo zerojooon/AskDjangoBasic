@@ -7,7 +7,7 @@ app_name = 'shop'
 register_converter(FourDigitYearConverter, 'yyyy')
 
 urlpatterns = [
-    path('', views.item_list, name='item_new'),
+    path('', views.item_list, name='item_new '),
     path('shop/', views.item_list, name='item_list'),
     path('archives/<yyyy:year>/',views.archives_year),
     # path('<int:id>/edit/', views.item_edit, name='item_edit'),  # Item수정
