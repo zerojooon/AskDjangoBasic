@@ -10,6 +10,7 @@ urlpatterns = [
     path('', views.item_list, name='item_new '),
     path('shop/', views.item_list, name='item_list'),
     path('archives/<yyyy:year>/',views.archives_year),
+    path('<int:pk>/',views.item_detail)
     # path('<int:id>/edit/', views.item_edit, name='item_edit'),  # Item수정
     # path('<int:id>/delete/', views.item_delete, name='item_delete'),  # Item삭제
     # path('<int:id>/reviews/', views.review_list, name='review_list'),  # 리뷰목록

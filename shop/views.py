@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Item
 from django.http import HttpResponse
 import logging
@@ -19,3 +19,9 @@ def item_list(request):
 
 def archives_year(request, year):
     return HttpResponse('{}년도에 대한 내용'.format(year))
+
+def item_detail(request, pk):
+    item = get_object_or_404(Item, pk=pk)
+    return render(request, 'shop/item_detail.html',{
+        'item' : item,
+    })
