@@ -37,3 +37,17 @@
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2020-07-23 01:49:44.126221' AND "django_session"."session_key" = 'vl5qqo0oect1enl4276tj3u3uhk2ja89') LIMIT 21; args=('2020-07-23 01:49:44.126221', 'vl5qqo0oect1enl4276tj3u3uhk2ja89')
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2020-07-23 01:49:48.669667' AND "django_session"."session_key" = 'vl5qqo0oect1enl4276tj3u3uhk2ja89') LIMIT 21; args=('2020-07-23 01:49:48.669667', 'vl5qqo0oect1enl4276tj3u3uhk2ja89')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "shop_item"."id", "shop_item"."name", "shop_item"."desc", "shop_item"."price", "shop_item"."is_publish", "shop_item"."created_at", "shop_item"."updated_at" FROM "shop_item" ORDER BY "shop_item"."id" ASC; args=()
