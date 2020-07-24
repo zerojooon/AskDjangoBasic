@@ -1,5 +1,6 @@
 from django.db import models
 from askdjango.utils import uuid_name_upload_to
+from django.shortcuts import reverse
 
 
 class Item(models.Model):
@@ -18,5 +19,9 @@ class Item(models.Model):
 
     class Meta:
         ordering=['id']
+
+    def get_absolute_url(self):
+        return reverse('shop:item_detail',kwargs={'pk': self.pk})
+
 
 
