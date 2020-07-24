@@ -1,3 +1,13 @@
 {% extends "layout.html" %}
 
 {% block title %}blog blog{%  endblock %}
+
+{% block extra_head %}
+    {{  block.super }}
+    <style>
+    </style>
+{%  endblock %}
+
+{%  block extra_body %}
+    {{ block.super }}
+{%  endblock %}

@@ -3,5 +3,11 @@
 
 
 {% block extra_head %}
-    HIHIHIHIHIHIHIHIHIHIHIHI
+    {{  block.super }}
+    <style>
+    </style>
+{%  endblock %}
+
+{%  block extra_body %}
+    {{ block.super }}
 {%  endblock %}

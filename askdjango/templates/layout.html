@@ -1,19 +1,24 @@
+{%  load static %}
+
 <html>
 <head>
     <title>{% block title %}Ask Company{%  endblock %} </title>
     <style>
         body {background-color: lightpink}
     </style>
-{% block extra_head %}{%  endblock %}
+{% block extra_head %}
+
+<link rel="stylesheet" href="{% static "main.css"%}"/>
+{%  endblock %}
 </head>
-<body>
-    <h1>Practice</h1>
+    <body>
+        <h1>Practice</h1>
 
-    {% block content %}
-    {% endblock %}
-<hr/>
-&copy; 2020.
+        {% block content %}
+        {% endblock %}
+        <hr/>
+        &copy; 2020.
 
-{% block extra_body %}{%  endblock %}
-</body>
+        {% block extra_body %}{%  endblock %}
+    </body>
 </html>
